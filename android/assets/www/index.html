@@ -1,24 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/reset.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/fontello.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/base.css" />
+
+    <title>Locamotive</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="home-header" id="ayalaTerraces">
+        <h1>
+          Where to...
+        </h1>
+        <div class="current-location">
+          <i class="icon-location" style="font-size: 1.4em"></i>
+          You are near Mabolo, Cebu
         </div>
-        <script type="text/javascript" src="cordova-2.4.0.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+      </div>
+      <ul class="home-listview">
+        <li>
+          <a href="category.html" class="cat-dine">
+            <i class="icon-restaurant"></i>
+            <strong>DINE</strong>
+            <small>restaurants, fast food, burgers</small>
+          </a>
+        </li>
+        <li>
+          <a href="category.html" class="cat-stay">
+            <i class="icon-lodging"></i>
+            <strong>Stay</strong>
+            <small>Hotels and Guest houses</small>
+          </a>
+        </li>
+        <li>
+          <a href="category.html" class="cat-party">
+            <i class="icon-bar"></i>
+            <strong>Party</strong>
+            <small>Bars and Chillout places</small>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="cordova-2.4.0.js"></script>
+    <script type="text/javascript" src="javascript/index.js"></script>
+    <script type="text/javascript">
+      app.initialize();
+    </script>
+  </body>
 </html>
